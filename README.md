@@ -117,8 +117,9 @@ The project is meant to be compared against the original `printf`, comparing bot
 ## 📚 Resources
 
 - Manual pages: `man 3 printf`, `man 3 stdarg` and `man 2 write`.
+- [GeeksforGeeks - Variadic Functions in C](https://www.geeksforgeeks.org/c/variadic-functions-in-c/)
+- [cppreference - Variadic Functions](https://en.cppreference.com/c/variadic)
 - [GNU Make manual](https://www.gnu.org/software/make/manual/)
-- [Valgrind documentation](https://valgrind.org/docs/manual/)
 - ft_printf subject provided by the school
 
 ### How AI was used
@@ -126,9 +127,5 @@ The project is meant to be compared against the original `printf`, comparing bot
 AI was used as a learning and review tool during this project, for these tasks:
 
 - **Understanding variadic functions:** explaining how `va_list`, `va_start`, `va_arg` and `va_end` work, and the common pitfalls (type promotion of `char`, and passing the argument list to other functions).
-- **Design guidance:** discussing how to structure the project (main loop, dispatcher, helper functions) so that new conversions are easy to add, and how to organize the files.
-- **Code review:** reviewing my `ft_printf` and its helper functions for edge cases, error handling, the Norm and `const`, and pointing out what to improve.
-- **A small refactor:** AI provided an example of replacing the duplicated character-writing helpers in `printf_dec.c`, `printf_hex.c` and `printf_int.c` with calls to `printf_char`.
+- **Code review and testing:** reviewing my `ft_printf` and its helper functions for edge cases, error handling and `const` against the original `printf`.
 - **README:** drafting this file.
-
-The structure of the project and the first version of the code were written by me.
